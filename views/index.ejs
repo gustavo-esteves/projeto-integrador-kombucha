@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick/slick-theme.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>OHMBUCHA - home</title>
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <span id="icone_busca">
+            <i id="busca" class="fa fa-search fa-1x"></i>
+        </span>
+        <input type="search" placeholder="Encontre seu sabor aqui" name="busca" id="busca">
+
+        <button type="submit">Procurar</button>
+    </form>
+
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="logo" title="OHMBUCHA">
+            <label for="logo">OHMBUCHA</label>
+        </div>
+
+        <div class="login">
+            <link title="LOGIN"><a href="login.ejs"><i class="fas fa-user fa-1x"></i></a></link>
+            <p>login</p>
+            
+            
+        </div>
+        
+        <nav class="menu">
+
+            <ul>
+                <li class="home">início</li>
+                <li>produtos</li>
+                <li>onde encontrar</li>
+                <li>blog</li>
+            </ul>
+
+        </nav>
+
+        <div class="contato">
+
+            <ul>
+                <li title="Facebook"><i class="fab fa-facebook fa-1x"></i></li>
+                <li title="Instagram"><a href="https://www.instagram.com/ohmbucha_br" target="_blank"><i class="fab fa-instagram fa-1x"></i></a></li>
+                <li title="Whatsapp"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank"><i class="fab fa-whatsapp fa-1x"></i></a></li>
+            </ul>
+           
+
+        </div>
+
+
+    </header>
+    
+    <div class="img-wrapper">
+        <img src="images/banner.png" alt="">
+    </div>
+    <ul class="slider">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="/images/Rótulo Original.jpeg" />
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img src="/images/Rótulo Gengibre e Açafrão.jpeg" />
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img src="/images/Rótulo Jasmim.jpeg" />
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="/images/Rótulo Morango com Gengibre.jpeg" />
+        </li>
+        <li>
+            <input type="radio" id="slide5" name="slide">
+            <label for="slide5"></label>
+            <img src="/images/Rótulo Floral.jpeg" />
+        </li>
+    </ul>
+
+    
+
+</body>
+
 </html>

@@ -1,8 +1,275 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-a {
-  color: #00B7FF;
+:root {
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Permanent Marker", serif;
+}
+
+/*Campo de busca*/
+
+form {
+  display: flex;
+  justify-content: flex-end;
+  background: #f2f2f2;
+}
+
+input#busca {
+  display: block;
+  justify-content: right;
+  height: 20px;
+  margin: 2px;
+  border: #808080 0.5px solid;
+  border-radius: 2px;
+  width: 200px;
+}
+
+input#busca:hover {
+  border: 0.5px solid #11998e;
+}
+
+form i {
+  padding: 1px 1px;
+  height: 20px;
+  color: #808080;
+  border-radius: 2px;
+}
+
+form button {
+  margin: 2px;
+  height: 20px;
+  color: #808080;
+  border-radius: 2px;
+  border: 0.5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 5px #808080;
+  
+}
+
+button:hover {
+  color: #f2f2f2;
+  background-color: #11998e;
+  font-weight: 500;
+}
+
+/*Cabeçalho*/
+
+header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  margin-left: 0;
+}
+
+.logo {
+  display: flex;
+  margin-left: 0;
+}
+
+header img {
+  display: flex;
+  width: 60px;
+  padding: 5px;
+  margin-left: 2.5vw;
+  border-radius: 50px;
+}
+
+header label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 0;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  transition-duration: 0.5s;
+}
+
+header label:hover {
+  color: #11998e;
+}
+
+.login {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #808080;
+  display: flex;
+  align-items: center;
+}
+
+.contato {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contato ul {
+  display: flex;
+  width: auto;
+  list-style: none;
+  padding: 5px 5px 5px 5px;
+  margin: 1vw;
+ justify-content: flex-end;
+}
+
+.contato i, .login i {
+  display: flex;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #808080;
+  padding: 5px;
+  transition-duration: 0.5s;
+  
+}
+
+.contato i:hover, .login i:hover {
+  color: #11998e;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-left: 8vw;
+}
+
+nav ul {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 0.7rem;
+  padding: 5px 5px 5px 0px;
+}
+
+nav li {
+  display: flex;
+  flex-wrap: wrap;
+  color: #808080;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: var(--font-primary);
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+nav li:hover {
+  color: #11998e;
+  cursor: pointer;
+}
+
+.home {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+}
+
+
+
+/*Banner*/
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff(0, 0, 0, 0.8);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 10s;
+
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Carrossel*/
+
+.slider {
+  display: flex;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: #11998e;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.slider li:nth-child(4) label {
+  left: 100px;
+}
+
+.slider li:nth-child(5) label {
+  left: 130px;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
