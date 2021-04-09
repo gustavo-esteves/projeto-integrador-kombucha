@@ -7,23 +7,22 @@
   font-family: var(--font-primary), sans-serif;
 }
 
-body {
-  background-color: #f2f2f2;
-  
-}
-
 :root {
   --font-primary: "Roboto", serif;
   --font-secondary: "Permanent Marker", serif;
 }
 
+body {
+  background: rgba(131, 165, 100, 0.9);
+  
+  color: #f2f2f2;
+  text-decoration: none;
+}
 
 section {
   margin: 100px 20px 20px 20px;
   min-width: 250px;
-  background: linear-gradient(90deg,#f8f8e2, #99f2c8);
   width: auto;
-  box-shadow: 0 0 5px #11998e;
   border-radius: 10px;
   opacity: 0.8;
 }
@@ -31,21 +30,19 @@ section {
 .logo {
   display: flex;
   justify-content: center;
-  
 }
 
 .logo img {
   display: flex;
   flex-direction: row;
-  width: 60px;
+  width: 90px;
   padding: 5px;
-  margin-left: 2.5vw;
   border-radius: 50%;
 }
 
 .logo label {
-  display: flex;  
-  align-items: center;  
+  display: flex;
+  align-items: center;
   font-family: var(--font-secondary);
   font-size: 1.5rem;
   transition-duration: 0.5s;
@@ -96,4 +93,25 @@ button:hover {
   color: #f2f2f2;
   background-color: #11998e;
   font-weight: 700;
+}
+
+p {
+  
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffed4c;
+  border-bottom: 2px solid #ffed4c;
+}
+
+a:hover {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+#voltar {
+  align-self: flex-end;
+  color: #ffed4c;
+  font-size: 1.2rem;
 }

@@ -13,31 +13,25 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
 
-    <form action="" method="get">
-        <span id="icone_busca">
-            <i id="busca" class="fa fa-search fa-1x"></i>
-        </span>
-        <input type="search" placeholder="Encontre seu sabor aqui" name="busca" id="busca">
-
-        <button type="submit">Procurar</button>
-    </form>
-
-
-
-    <header>
+    <!-- Logo e label name -->
+    <header id="cabecalho">
         <div class="logo">
-            <img src="/images/logo.jpeg" alt="logo" title="OHMBUCHA">
+            <img src="/images/logo.png" alt="logo" title="OHMBUCHA">
             <label for="logo">OHMBUCHA</label>
         </div>
 
+        <!-- Login -->
         <div class="login">
             <link title="LOGIN"><a href="login.ejs"><i class="fas fa-user fa-1x"></i></a></link>
             <p>login</p>
-            
-            
+
+
         </div>
-        
+
+        <!-- Menu de navegação -->
+
         <nav class="menu">
 
             <ul>
@@ -49,24 +43,45 @@
 
         </nav>
 
+        <!-- Barra de pesquisa -->
+
+        <form id="pesquisar" action="" method="get">
+            <span id="icone_busca">
+                <i id="busca" class="fa fa-search fa-1x"></i>
+            </span>
+            <input type="search" placeholder="Encontre seu sabor aqui" name="busca" id="busca">
+
+            <button type="submit">Procurar</button>
+        </form>
+
+        <!-- Contato -->
+
         <div class="contato">
 
             <ul>
-                <li title="Facebook"><i class="fab fa-facebook fa-1x"></i></li>
-                <li title="Instagram"><a href="https://www.instagram.com/ohmbucha_br" target="_blank"><i class="fab fa-instagram fa-1x"></i></a></li>
-                <li title="Whatsapp"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank"><i class="fab fa-whatsapp fa-1x"></i></a></li>
+                <li title="Facebook"><a href="https://www.facebook.com/Ohmbucha-114421486867260" target="_blank"><i
+                            class="fab fa-facebook-square fa-1x"></i></a></li>
+                <li title="Instagram"><a href="https://www.instagram.com/ohmbucha_br" target="_blank"><i
+                            class="fab fa-instagram fa-1x"></i></a></li>
+                <li title="Whatsapp"><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097"
+                        target="_blank"><i class="fab fa-whatsapp fa-1x"></i></a></li>
             </ul>
-           
+
 
         </div>
 
 
+
+
     </header>
-    
+
+    <!-- Imagem de banner -->
+
     <div class="img-wrapper">
         <img src="/images/banner.png" alt="">
     </div>
-    <ul class="slider">
+
+    <!-- <ul class="slider">
         <li>
             <input type="radio" id="slide1" name="slide" checked>
             <label for="slide1"></label>
@@ -92,9 +107,80 @@
             <label for="slide5"></label>
             <img src="/images/Rótulo Floral.jpeg" />
         </li>
-    </ul>
+    </ul> -->
 
-    
+    <!-- Rodapé -->
+
+    <footer>
+        <div class="main-content">
+
+            <div class="left box">
+                <h2>Sobre Nós</h2>
+
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iure, expedita laborum tempore
+                        tenetur sequi, incidunt mollitia enim, qui iusto doloremque aperiam ad atque perferendis quidem
+                        accusantium consectetur totam veritatis.</p>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/Ohmbucha-114421486867260"><span
+                                class="fab fa-facebook-f"></span></a>
+                        <a href="https://www.instagram.com/ohmbucha_br/"><span class="fab fa-instagram"></span></a>
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank"><span
+                                class="fab fa-whatsapp fa-1x"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Contatos</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">São Paulo, Brasil</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+55-11-1234-5678</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">contato@kombucha.com.br</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right box">
+                <h2>Fale Conosco</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">E-mail *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Mensagem *</div>
+                            <textarea cols="25" rows="2" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By OHMBUCHA <a href="#">--</a> | </span>
+                <span class="far fa-copyright"><span> 2021 All rights reserved.</span></span>
+
+
+            </center>
+        </div>
+    </footer>
+
+
+
 
 </body>
 
