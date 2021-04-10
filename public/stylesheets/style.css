@@ -291,6 +291,117 @@ a:link {
 
 */
 
+/*Planos de Assinatura*/
+/*Título da tabela*/
+
+.planos {
+  margin-top: 40px;
+  height: 75vh;
+  width: auto;
+}
+
+/*Planos de Assinatura*/
+/*Conteúdo da tabela*/
+
+.titulo-planos {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #5b9129;
+  margin-bottom: 36px;
+}
+
+.tabela-planos {
+  margin-top: 25px 0;
+  height: 60vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2%;
+  box-shadow: 0 0 20px rgba (0, 0, 0, 0.15);
+}
+
+.tabela-planos th,
+.tabela-planos td {
+  padding: 12px 15px;
+}
+
+.tabela-planos thead {
+  padding: 20px;
+}
+
+.tabela-planos tbody tr:nth-child(-n+5){
+  border-bottom: 0.75px solid rgba(0, 0, 0, 0.75);
+}
+
+.tabela-planos tbody td:nth-child(-n+4){
+  border-right: 0.75px solid rgba(0, 0, 0, 0.75);
+}
+
+.transparente {
+  border-bottom: 1px solid #fff;
+}
+
+#transparente-id, #botao1, #botao2, #botao3 {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.botao-right-left {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.plano-silver {
+  background-color: #8FC160;
+}
+
+.plano-gold {
+  background-color: #68B3CF;
+}
+
+.plano-platinum {
+  background-color: #7998D1;
+}
+
+.fonte-preço {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.btn-1 {
+  background-color: #8FC160;
+  padding: 12px;
+  border: 0.7px solid #dddddd;
+  border-radius: 10%;
+  padding-right: 23px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.btn-2 {
+  background-color: #68B3CF;
+  padding: 12px;
+  border: 0.7px solid #dddddd;
+  border-radius: 10%;
+  padding-right: 23px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.btn-3 {
+  background-color: #7998D1;;
+  padding: 12px;
+  border: 0.7px solid #dddddd;
+  border-radius: 10%;
+  padding-right: 23px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
 /*------ Footer ------*/
 
 footer {
