@@ -5,6 +5,7 @@
   margin: 0;
   border: 0;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 :root {
@@ -24,7 +25,6 @@
   background-color: rgb(131, 165, 100, 0.5);
   width: 100%;
 }
-
 
 .logo {
   display: flex;
@@ -69,7 +69,6 @@ header label:hover {
   align-items: center;
   margin-left: 2vw;
 }
-
 
 /*----- Menu -----*/
 
@@ -221,83 +220,273 @@ a:link {
   }
 }
 
-/*------ Carrossel ------*/
+/*----- Seção de apresentação do produto -----*/
 
-/*
-
-.slider {
-  display: flex;
-  height: 293px;
-  width: 600px;
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-.slider li {
-  list-style: none;
-  position: absolute;
+.col-1 {
+  width: 8.33%;
 }
 
-.slider img {
-  margin: auto;
-  height: 100%;
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
   width: 100%;
-  vertical-align: top;
-  opacity: 0;
-  visibility: hidden;
 }
 
-.slider input {
-  display: none;
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.slider label {
-  background-color: #11998e;
-  bottom: 10px;
-  cursor: pointer;
+.clear {
+  clear: both;
+}
+
+.texto {
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.titulo {
+  color: #6d8742;
+  margin: 35px 0px;
+  font-size: 3em;
+  font-family: "Roboto";
+}
+
+.titulo2 {
+  color: #6d8742;
+  margin: -71px 0px 17px 19px;
+  font-size: 3em;
+  font-family: "Roboto";
+}
+
+.titulo3 {
+  color: #ffffff;
+  margin: 0px 0px 17px 19px;
+  font-size: 3em;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.line {
+  width: 48%;
+  border: 3px solid #6d8742;
+  float: right;
+  margin-top: 25px;
+}
+
+.line2 {
+  width: 30%;
+  border: 3px solid #ffffff;
+  float: left;
+  margin-top: 25px;
+}
+
+.line3 {
+  width: 30%;
+  border: 3px solid #ffffff;
+  float: right;
+  margin-top: 25px;
+}
+
+.box1 {
+  width: 48%;
+  background-color: #6d8742;
+  border-radius: 0px 15px 15px 0px;
+  height: auto;
+  border-bottom: 10px solid #465829;
+  box-sizing: border-box;
+  padding: 2%;
+  float: left;
+}
+
+.box2 {
+  width: 48%;
+  background-color: #6d8742;
+  border-radius: 15px 0px 0px 15px;
+  height: auto;
+  border-bottom: 10px solid #465829;
+  box-sizing: border-box;
+  padding: 2%;
+  float: right;
+}
+
+.faixa {
+  background-color: #6d8742;
+  width: 100%;
+  height: auto;
+  margin: 47px 0px 0px 0px;
+  border-bottom: 10px solid #465829;
+}
+
+.icone {
   display: block;
-  height: 10px;
+  margin: 20px auto 0px auto;
+}
+
+.tituloIcone {
+  text-align: center;
+  margin: 20px 0px;
+  color: #ffed4c;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.sabores {
+  width: 100%;
+  height: 1101px;
+  background-image: url(/images/bg_produtos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position-y: bottom;
+  padding: 30px 0px;
+}
+
+.font-gengibre {
+  font-size: 23px !important;
+  margin: 6px 0px;
+}
+
+.boxSabores {
+  width: 100%;
+  height: auto;
+  /* background: #fff; */
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0px 26px;
+}
+
+.box-titulo-sabor {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 14px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box-titulo-sabor h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-left: 49px;
+}
+
+.boxSabores h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.boxSabores p {
+  text-align: center;
+  font-size: 17px;
+  margin: 25px 54px;
+  text-align: justify;
+}
+
+.line-sabores {
+  width: 87%;
+  border-bottom: 4px solid #f78e89;
+  margin-top: 10px;
+}
+
+.btn {
+  display: block;
+  margin: 0px auto;
+  font-size: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d5d5d5;
+  color: #333;
+}
+
+.garrafa {
   position: absolute;
-  width: 10px;
-  z-index: 10;
+  width: 108px;
+  top: -32px;
+  left: -10px;
 }
 
-.slider li:nth-child(1) label {
-  left: 10px;
+.box-invisivel {
+  background: #fff;
+  border-radius: 10px 0px;
+  box-sizing: border-box;
+  padding: 11px 0px 11px 43px;
 }
 
-.slider li:nth-child(2) label {
-  left: 40px;
+.rosa {
+  background: #f78e89;
+  transition-duration: 0.3s;
 }
 
-.slider li:nth-child(3) label {
-  left: 70px;
+.amarelo {
+  background: #f1e032;
 }
 
-.slider li:nth-child(4) label {
-  left: 100px;
+.azul1 {
+  background: #82b2ce;
 }
 
-.slider li:nth-child(5) label {
-  left: 130px;
+.verde {
+  background: #9ec066;
 }
 
-.slider li input:checked ~ img {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
+.azul2 {
+  background: #9fe0ca;
 }
 
-*/
-
-/*Planos de Assinatura*/
-/*Título da tabela*/
-
-.planos {
-  margin-top: 40px;
-  height: 75vh;
-  width: auto;
+.azul3 {
+  background: #8297ce;
 }
 
 /*Planos de Assinatura*/
@@ -333,11 +522,11 @@ a:link {
   padding: 20px;
 }
 
-.tabela-planos tbody tr:nth-child(-n+5){
+.tabela-planos tbody tr:nth-child(-n + 5) {
   border-bottom: 0.75px solid rgba(0, 0, 0, 0.75);
 }
 
-.tabela-planos tbody td:nth-child(-n+4){
+.tabela-planos tbody td:nth-child(-n + 4) {
   border-right: 0.75px solid rgba(0, 0, 0, 0.75);
 }
 
@@ -345,7 +534,10 @@ a:link {
   border-bottom: 1px solid #fff;
 }
 
-#transparente-id, #botao1, #botao2, #botao3 {
+#transparente-id,
+#botao1,
+#botao2,
+#botao3 {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
 }
@@ -356,15 +548,15 @@ a:link {
 }
 
 .plano-silver {
-  background-color: #8FC160;
+  background-color: #8fc160;
 }
 
 .plano-gold {
-  background-color: #68B3CF;
+  background-color: #68b3cf;
 }
 
 .plano-platinum {
-  background-color: #7998D1;
+  background-color: #7998d1;
 }
 
 .fonte-preço {
@@ -373,7 +565,7 @@ a:link {
 }
 
 .btn-1 {
-  background-color: #8FC160;
+  background-color: #8fc160;
   padding: 12px;
   border: 0.7px solid #dddddd;
   border-radius: 10%;
@@ -383,7 +575,7 @@ a:link {
 }
 
 .btn-2 {
-  background-color: #68B3CF;
+  background-color: #68b3cf;
   padding: 12px;
   border: 0.7px solid #dddddd;
   border-radius: 10%;
@@ -393,7 +585,7 @@ a:link {
 }
 
 .btn-3 {
-  background-color: #7998D1;;
+  background-color: #7998d1;
   padding: 12px;
   border: 0.7px solid #dddddd;
   border-radius: 10%;
@@ -586,4 +778,10 @@ footer {
   .main-content .box {
     margin: 5px 0;
   }
+}
+
+/*---- Manter links sem destaque -----*/
+
+a:hover, a:visited, a:focus, a:active{ 
+text-decoration: none; color: inherit;
 }
