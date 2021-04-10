@@ -7,8 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET login page. */
-router.get('/login.ejs', function(req, res, next) {
-  res.render('login', { title: 'Login' });
+router.get('/login', function(req, res, next) {
+  res.render('login', {
+    title: 'Login',
+    isLoginPage: true
+ });
 });
 
 module.exports = router;

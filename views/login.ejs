@@ -8,16 +8,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    
-    
 
-    <section>
+    <%- include('partials/header') %>
+
+    <section class="login-content-page">
         <div class="logo">
             <img src="/images/logo.png" alt="logo" title="OHMBUCHA">
             <label for="logo">OHMBUCHA</label>
@@ -41,9 +41,21 @@
                 <button type="submit">Login</button>
                 <br>
                 <div>
-                    <p><small><a href="/senha" target="_blank">Esqueceu a senha?</small></a></p>
+                    <p>
+                        <small>
+                            <a href="/senha" target="_blank">Esqueceu a senha?
+                            </a>
+                        </small>
+                    </p>
                     <br>
-                    <p><small>Ainda não tem conta? <a href="/cadastro" target="_blank"><br>Clique aqui</small></a></p>
+                    <p>
+                        <small>Ainda não tem conta?
+                            <a href="/cadastro" target="_blank">
+                                Clique aqui
+                            </a>
+                            <br>
+                        </small>
+                    </p>
                 </div>
             </form>
         </div>
@@ -51,7 +63,7 @@
         <a id="voltar" href="/">Voltar</a>
     </section>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
 
 </body>
 

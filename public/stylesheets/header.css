@@ -1,0 +1,187 @@
+
+/*----- Cabeçalho -----*/
+
+#cabecalho {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1;
+  background-color: rgb(131, 165, 100, 0.5);
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  margin-left: 2vw;
+}
+
+#cabecalho img {
+  display: flex;
+  width: 100px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+#cabecalho h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #f2f2f2;
+  margin-left: 2vw;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+}
+
+#cabecalho h1:hover {
+  color: #ffed4c;
+  border-bottom: white solid 2px;
+  margin-bottom: -2px;
+}
+
+.btn-login {
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  color: #f2f2f2;
+}
+
+.login {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+/*----- Menu -----*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-left: 8vw;
+}
+
+nav ul {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 0.7rem;
+  padding: 5px 5px 5px 0px;
+}
+
+nav li {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: var(--font-primary);
+  justify-content: space-between;
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #ffed4c;
+  cursor: pointer;
+  border-bottom: white solid 2px;
+  margin-bottom: -2px;
+}
+
+/*----- Campo de busca -----*/
+
+#pesquisar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input#busca {
+  display: block;
+  justify-content: right;
+  background-color: transparent;
+  height: 20px;
+  margin: 2px;
+  color: #ffed4c;
+  border: #f2f2f2 0.5px solid;
+  border-radius: 2px;
+  width: 200px;
+}
+
+input#busca:hover {
+  border: 0.5px solid #ffed4c;
+}
+
+#pesquisar i {
+  padding: 1px 1px;
+  height: 20px;
+  color: #f2f2f2;
+  border-radius: 2px;
+}
+
+#pesquisar button {
+  margin: 2px;
+  height: 20px;
+  background-color: transparent;
+  color: #f2f2f2;
+  border-radius: 2px;
+  border: 0.5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 5px #fff;
+}
+
+#pesquisar button:hover {
+  color: #ffed4c;
+  box-shadow: 0 0 5px #ffed4c;
+  font-weight: 500;
+}
+
+/*----- Contato -----*/
+
+.contato {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contato ul {
+  display: flex;
+  width: auto;
+  list-style: none;
+  padding: 5px 5px 5px 5px;
+  margin: 1vw;
+  justify-content: flex-end;
+}
+
+.contato i,
+.login i {
+  display: flex;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #f2f2f2;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+.contato i:hover,
+.login i:hover {
+  color: #ffed4c;
+  cursor: pointer;
+  border-bottom: white solid 2px;
+}
+
+a:link {
+  text-decoration: none;
+}
