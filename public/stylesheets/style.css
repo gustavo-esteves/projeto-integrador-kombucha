@@ -399,12 +399,3 @@
   cursor: pointer;
 }
 
-/*---- Manter links sem destaque -----*/
-
-a:hover,
-a:visited,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
-}

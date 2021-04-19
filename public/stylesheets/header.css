@@ -184,3 +184,7 @@ nav li:hover {
 a:link {
   text-decoration: none;
 }
+
+a {
+  color: #f2f2f2;
+}

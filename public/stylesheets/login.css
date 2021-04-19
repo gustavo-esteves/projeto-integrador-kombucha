@@ -101,10 +101,3 @@ footer {
   margin-top: 5vh;
 }
 
-a:hover,
-a:visited,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
-}
