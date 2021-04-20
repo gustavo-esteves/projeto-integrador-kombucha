@@ -8,14 +8,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="stylesheet" href="stylesheets/base.css">
     <link rel="stylesheet" href="/stylesheets/login.css">
     <title>Login</title>
 </head>
 
 <body>
+    
+    
+
     <section>
         <div class="logo">
-            <img src="/images/logo.jpg" alt="logo" title="OHMBUCHA">
+            <img src="/images/logo.png" alt="logo" title="OHMBUCHA">
             <label for="logo">OHMBUCHA</label>
         </div>
 
@@ -37,11 +41,15 @@
                 <button type="submit">Login</button>
                 <br>
                 <div>
-                    <p><small>Ainda não tem conta? <a href="../cadastro" target="_blank">Clique aqui</small></a></p>
+                    <p><small>Ainda não tem conta? <a href="../cadastro" target="_blank"><br>Clique aqui</small></a></p>
                 </div>
             </form>
         </div>
+
+        <a id="voltar" href="/">Voltar</a>
     </section>
+
+<%- include('partials/footer') %>
 
 </body>
 
