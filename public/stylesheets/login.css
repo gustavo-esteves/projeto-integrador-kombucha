@@ -1,29 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 
-* {
-  margin: 0;
-  border: 0;
-  font-family: var(--font-primary), sans-serif;
-}
-
-:root {
-  --font-primary: "Roboto", serif;
-  --font-secondary: "Permanent Marker", serif;
-}
-
 body {
   background: rgba(131, 165, 100, 0.9);
-  
+
   color: #f2f2f2;
   text-decoration: none;
 }
 
-
-section {
+.login-content-page {
   margin-top: 10vh;
   min-width: 250px;
   width: auto;
+  flex-grow: 1;
 }
 
 .logo {
@@ -44,7 +33,6 @@ section {
   align-items: center;
   font-family: var(--font-secondary);
   font-size: 1.5rem;
-  transition-duration: 0.5s;
 }
 
 .logo label:hover {
@@ -84,7 +72,6 @@ button {
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
-  transition-duration: 0.5s;
   box-shadow: 0 0 5px #11998e;
 }
 
@@ -95,18 +82,12 @@ button:hover {
 }
 
 p {
-  
   font-size: 1rem;
 }
 
 a {
   text-decoration: none;
   color: #ffed4c;
-  border-bottom: 2px solid #ffed4c;
-}
-
-a:hover {
-  border-bottom: 2px solid #f2f2f2;
 }
 
 #voltar {
@@ -120,7 +101,3 @@ footer {
   margin-top: 5vh;
 }
 
-a:hover, a:visited, a:focus, a:active{ 
-text-decoration: none;
-color: inherit;
-}

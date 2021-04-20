@@ -2,55 +2,60 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="stylesheet" href="stylesheets/base.css">
-    <link rel="stylesheet" href="/stylesheets/login.css">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/login.css" />
+  <title>Login</title>
 </head>
 
 <body>
-    
-    
+  <%- include('partials/header') %>
 
-    <section>
-        <div class="logo">
-            <img src="/images/logo.png" alt="logo" title="OHMBUCHA">
-            <label for="logo">OHMBUCHA</label>
-        </div>
+    <section class="login-content-page">
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" title="OHMBUCHA" />
+        <label for="logo">OHMBUCHA</label>
+      </div>
 
-
-        <div class="login">
-            <form action="/login" method="post">
-
-                <label for="email"></label>
-                <input type="email" placeholder="Digite seu email" name="email" id="email">
-                <br>
-                <label for="password"></label>
-                <input type="password" placeholder="Digite sua senha" name="password" id="password">
-                <br>
-                <div class="checkbox">
-                    <input type="checkbox" id="conectado" name="conectado" value="yes" checked>
-                    <small>Mantenha-me conectado</small>
-                </div>
-                <br>
-                <button type="submit">Login</button>
-                <br>
-                <div>
-                    <p><small>Ainda não tem conta? <a href="../cadastro" target="_blank"><br>Clique aqui</small></a></p>
-                </div>
-            </form>
-        </div>
-
-        <a id="voltar" href="/">Voltar</a>
+      <div class="login">
+        <form action="/login" method="post">
+          <label for="email"></label>
+          <input type="email" placeholder="Digite seu email" name="email" id="email" />
+          <br />
+          <label for="password"></label>
+          <input type="password" placeholder="Digite sua senha" name="password" id="password" />
+          <br />
+          <div class="checkbox">
+            <input type="checkbox" id="conectado" name="conectado" value="yes" checked />
+            <small>Mantenha-me conectado</small>
+          </div>
+          <br />
+          <button type="submit">Login</button>
+          <br />
+          <div>
+            <p>
+              <small>
+                <a href="/senha" target="_blank">Esqueceu a senha? </a>
+              </small>
+            </p>
+            <br />
+            <p>
+              <small>Ainda não tem conta?
+                <a href="/cadastro" target="_blank"> Clique aqui </a>
+                <br />
+              </small>
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
 
-<%- include('partials/footer') %>
-
+    <%- include('partials/footer') %>
 </body>
 
 </html>
