@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/cadastro.css" />
+    <title>Cadastro - Ohmbucha</title>
 </head>
+
 <body>
-    
+    <%- include('partials/header') %>
+
+        <section class="login-content-page">
+            <div class="logo">
+                <img src="/images/logo.png" alt="logo" title="OHMBUCHA" />
+                <label for="logo">OHMBUCHA</label>
+            </div>
+
+            <h2>Dados básicos</h2>
+            <form action="/cadastro" method="post">
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Digite seu email" name="email" id="email"><br>
+                </p>
+                <p>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" placeholder="Cadastre sua senha" name="password" id="password"><br>
+                </p>
+                <p>
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" placeholder="Seu nome completo" name="nome" id="nome"><br>
+                </p>
+
+                <h2>Dados de entrega</h2>
+                <p>
+                    <label for="endereco">Endereço</label><br>
+                    <input type="text" name="endereco" id="endereco"><br>
+                </p>
+
+                <p>
+                    <label for="bairro">Bairro</label><br>
+                    <input type="text" name="bairro" id="bairro"><br>
+                </p>
+
+                <p>
+                    <label for="complemento">Complemento</label><br>
+                    <input type="text" name="complemento" id="complemento"><br>
+                </p>
+
+                <p>
+                    <label for="cidadeUF">Cidade</label><br>
+                    <input type="text" name="cidadeUF" id="cidadeUF"><br>
+                </p>
+
+                <p>
+                    <label for="estado">Estado</label><br>
+                    <input type="text" name="estado" id="estado"><br>
+                </p>
+
+                <p>
+                    <label for="cep">CEP</label><br>
+                    <input type="text" name="cep" id="cep"><br>
+                </p>
+
+            </form>
+
+            <br>
+
+            <form>
+                <input type="submit" value="Concluir" id="submit">
+            </form>
+
+        </section>
+
+        <%- include('partials/footer') %>
 </body>
+
 </html>

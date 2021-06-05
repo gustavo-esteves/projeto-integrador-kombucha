@@ -14,4 +14,11 @@ router.get("/login", function (req, res, next) {
   });
 });
 
+/* GET cadastro page. */
+router.get("/cadastro", function (req, res, next) {
+  res.render("cadastro", {
+    title: "Cadastro",
+  });
+});
+
 module.exports = router;
