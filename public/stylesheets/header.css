@@ -178,7 +178,8 @@ nav li:hover {
 .login i:hover {
   color: #ffed4c;
   cursor: pointer;
-  border-bottom: white solid 2px;
+  border-bottom: white solid -2px;
+
 }
 
 a:link {
@@ -187,4 +188,8 @@ a:link {
 
 a {
   color: #f2f2f2;
+}
+
+a:hover {
+  color:#ffed4c;
 }
