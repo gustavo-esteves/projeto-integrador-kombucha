@@ -12,44 +12,18 @@ body {
   color: #f2f2f2;
   text-decoration: none;
   font-family: var(--font-primary);
-  display: flex;
+  display: grid;
 }
 
-.login-content-page {
-  margin-top: 10vh;
-  min-width: 250px;
-  width: auto;
-  flex-grow: 1;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.logo img {
-  display: flex;
-  flex-direction: row;
-  width: 90px;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.logo label {
-  display: flex;
-  align-items: center;
-  font-family: var(--font-secondary);
-  font-size: 1.5rem;
-}
-
-.logo label:hover {
-  color: #11998e;
-}
-
-label,
 h2 {
-  color: #ffed4c;
+  font-size: 2rem;
+  padding: 30px;
 }
+
+.formulario {
+  margin: 20vh 20vw;
+}
+
 
 input {
   width: 300px;
@@ -59,12 +33,15 @@ input {
 }
 
 #submit {
-  width: 300px;
-  height: 30px;
+
+
   color: #11998e;
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
 }
 
+p {
+  padding: 10px;
+}
 
