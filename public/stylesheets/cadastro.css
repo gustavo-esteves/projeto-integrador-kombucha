@@ -37,7 +37,8 @@ input {
 
 #submit {
   height: 25px;
-  width: 350px;
+  margin-left: 6vh;
+  width: 250px;
   color: #11998e;
   background: #fff;
   border-radius: 5px;
