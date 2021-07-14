@@ -47,9 +47,10 @@ input {
 }
 
 input#submit:hover{
-  color: #f2f2f2;
-  background-color: #11998e;
+  color: #000;
+  background-color: #ffed4c;
   font-weight: 700;
+  transition: 1s;
 }
 
 p {

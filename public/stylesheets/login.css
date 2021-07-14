@@ -9,7 +9,7 @@ body {
 }
 
 .login-content-page {
-  margin-top: 10vh;
+  margin-top: 15vh;
   min-width: 250px;
   width: auto;
   flex-grow: 1;
@@ -36,7 +36,8 @@ body {
 }
 
 .logo label:hover {
-  color: #11998e;
+  color: #ffed4c;
+  transition: 1s;
 }
 
 /*Formulário*/
@@ -76,9 +77,10 @@ button {
 }
 
 button:hover {
-  color: #f2f2f2;
-  background-color: #11998e;
+  color: #000;
+  background-color: #ffed4c;
   font-weight: 700;
+  transition: 1s;
 }
 
 p {
