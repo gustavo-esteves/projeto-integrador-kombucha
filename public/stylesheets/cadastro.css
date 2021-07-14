@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+:root {
+  --font-primary: "Roboto", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(131, 165, 100, 0.8);
+  color: #f2f2f2;
+  text-decoration: none;
+  font-family: var(--font-primary);
+  display: grid;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.formulario {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 350px;
+  border-radius: 5px;
+  height: 25px;
+  box-shadow: 0 0 5px #ffed4c;
+}
+
+#submit {
+  height: 25px;
+  margin-left: 6vh;
+  width: 250px;
+  color: #11998e;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ffed4c;
+}
+
+input#submit:hover{
+  color: #f2f2f2;
+  background-color: #11998e;
+  font-weight: 700;
+}
+
+p {
+  padding: 10px;
+}
