@@ -1,15 +1,16 @@
 <!-- Cabeçalho -->
-<link href="/stylesheets/header.css" rel="stylesheet" />
+<link href="/css/header.css" rel="stylesheet" />
 
 <!-- Logo e label name -->
 <header id="cabecalho">
   <a class="logo" href="/">
-    <img src="/images/logo.png" alt="logo" title="OHMBUCHA" />
+    <img src="/img/logo.png" alt="logo" title="OHMBUCHA" />
     <h1>OHMBUCHA</h1>
   </a>
 
   <!-- Login -->
   <% if (!locals.isLoginPage) { %>
+    
     <div class="login">
       <a href="/login" class="btn-login">
         <i class="fas fa-user fa-1x"></i>
@@ -24,8 +25,13 @@
         <ul>
           <li class="home"><a href="/">início</a></li>
           <li><a href="/#sabores">produtos</a></li>
+
+          <% if (!locals.isCadastroPage) { %>
           <li class="cadastro"><a href="/cadastro">cadastro</a></li>
-          <li>blog</li>
+          <% } %>
+          
+          <li class="carrinho"><a href="/carrinho">carrinho
+          <i class="fas fa-shopping-cart" style="color: #ffed4c"></i></a></li>
         </ul>
       </nav>
 
@@ -46,17 +52,17 @@
         <ul>
           <li title="Facebook">
             <a href="https://www.facebook.com/Ohmbucha-114421486867260" target="_blank">
-              <i class="fab fa-facebook-square fa-1x"></i>
+              <i class="fab fa-facebook-square fa-1.5x"></i>
             </a>
           </li>
           <li title="Instagram">
             <a href="https://www.instagram.com/ohmbucha_br" target="_blank">
-              <i class="fab fa-instagram fa-1x"></i>
+              <i class="fab fa-instagram fa-1.5x"></i>
             </a>
           </li>
           <li title="Whatsapp">
             <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank">
-              <i class="fab fa-whatsapp fa-1x"></i>
+              <i class="fab fa-whatsapp fa-1.5x"></i>
             </a>
           </li>
         </ul>

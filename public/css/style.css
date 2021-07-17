@@ -1,4 +1,4 @@
-@import url("/stylesheets/base.css");
+@import url("/css/base.css");
 
 /*----- Banner -----*/
 
@@ -119,6 +119,13 @@
   text-align: center;
 }
 
+.titulo4 {
+  color: #6d8742;
+  margin: 0px 0px 17px 19px;
+  font-size: 3em;
+  font-family: "Roboto";
+  text-align: center;
+}
 .line {
   width: 48%;
   border: 3px solid #6d8742;
@@ -136,6 +143,20 @@
 .line3 {
   width: 30%;
   border: 3px solid #ffffff;
+  float: right;
+  margin-top: 25px;
+}
+
+.line4 {
+  width: 30%;
+  border: 3px solid #6d8742;
+  float: left;
+  margin-top: 25px;
+}
+
+.line5 {
+  width: 30%;
+  border: 3px solid #6d8742;
   float: right;
   margin-top: 25px;
 }
@@ -171,6 +192,7 @@
 }
 
 .icone {
+  width: 80px;
   display: block;
   margin: 20px auto 0px auto;
 }
@@ -186,7 +208,8 @@
 .sabores {
   width: 100%;
   height: 1101px;
-  background-image: url(/images/bg_produtos.png);
+  background: linear-gradient(to bottom, rgb(131, 165, 100), #faffd1);
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -297,6 +320,10 @@
 /*Planos de Assinatura*/
 /*Conteúdo da tabela*/
 
+.planos {
+  background: linear-gradient(to bottom, #faffd1, rgb(131, 165, 100, 0.8));
+}
+
 .titulo-planos {
   text-align: center;
   font-size: 40px;
@@ -327,25 +354,8 @@
   padding: 20px;
 }
 
-.tabela-planos tbody tr:nth-child(-n + 5) {
-  border-bottom: 0.75px solid rgba(0, 0, 0, 0.75);
-}
 
-.tabela-planos tbody td:nth-child(-n + 4) {
-  border-right: 0.75px solid rgba(0, 0, 0, 0.75);
-}
 
-.transparente {
-  border-bottom: 1px solid #fff;
-}
-
-#transparente-id,
-#botao1,
-#botao2,
-#botao3 {
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-}
 
 .botao-right-left {
   border-right: 1px solid #fff;

@@ -2,8 +2,8 @@
 
 #cabecalho {
   position: fixed;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   z-index: 1;
@@ -18,7 +18,7 @@
 
 #cabecalho img {
   display: flex;
-  width: 90px;
+  width: 70px;
   padding: 5px;
   border-radius: 50px;
 }
@@ -40,6 +40,7 @@
 }
 
 .btn-login {
+  padding: 10px;
   display: flex;
   align-items: center;
 }
@@ -47,7 +48,7 @@
 .home {
   font-weight: 700;
   font-size: 1rem;
-  font-family: var(--font-primary);
+ 
   color: #f2f2f2;
 }
 
@@ -166,7 +167,6 @@ nav li:hover {
 .contato i,
 .login i {
   display: flex;
-  font-size: 1.5rem;
   flex-wrap: wrap;
   list-style: none;
   color: #f2f2f2;
