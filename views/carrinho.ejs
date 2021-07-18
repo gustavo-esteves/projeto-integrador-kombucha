@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="stylesheet" href="/css/carrinho.css" />
+    <title>Finalizar compra</title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <section>
+    <div class="col-25">
+
+        <div class="container">
+            <h2>Carrinho
+                <span class="price" style="color: #ffed4c">
+                    <i class="fa fa-shopping-cart" style="color: #ffed4c"></i>
+                    <b>#</b>
+                </span>
+                <br />
+            </h2>
+            <br>
+            <p><a href="#">Produto 1</a> <span class="price">R$ 15,00</span></p><br>
+
+            <p><a href="#">Produto 2</a> <span class="price">R$ 5,00</span></p><br>
+
+            <p><a href="#">Produto 3</a> <span class="price">R$ 8,00</span></p><br>
+
+            <p><a href="#">Produto 4</a> <span class="price">R$ 2,00</span></p><br>
+            <hr />
+            <h2>
+                <b>Total</b> <span class="price" style="color: #fff"><b>R$ 30,00</b></span>
+            </h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="col-75">
+
+        <div class="container">
+
+            <form action="">
+
+                <div class="col-50">
+                    <h2>Pagamento</h2>
+                    <label for="fname">Cartões</label>
+                    <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color: navy"></i>
+                        <i class="fab fa-cc-mastercard" style="color: red"></i>
+                        <i class="fab fa-cc-amex" style="color: green"></i>
+                    </div>
+                    <label for="cname">Nome no cartão</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Ex: Manolo da Silva" />
+                    <label for="ccnum">Número do cartão</label>
+                    <input type="text" maxlength="12" id="ccnum" name="cardnumber"
+                        placeholder="Ex: 9999 9999 9999 9999" />
+
+
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expmonth">Mês</label>
+                            <input type="number" min="01" max="12" maxlength="2" id="expmonth" name="expmonth" placeholder="Ex: 01" />
+                            <label for="expyear">Ano</label>
+                            <input type="number" min="2021" max="2028" maxlength="4" id="expyear" name="expyear" placeholder="Ex: 2021" />
+                            <label for="cvv">CVV</label>
+                            <input type="text" maxlength="3" id="cvv" name="cvv" placeholder="999" />
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Finalizar compra" class="btn" />
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+<%- include('partials/footer') %>
+</body>
+
+</html>

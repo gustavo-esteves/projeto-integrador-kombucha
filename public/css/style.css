@@ -93,28 +93,28 @@
 
 .texto {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1rem;
   text-align: justify;
 }
 
 .titulo {
   color: #6d8742;
   margin: 35px 0px;
-  font-size: 3em;
+  font-size: 2rem;
   font-family: "Roboto";
 }
 
 .titulo2 {
   color: #6d8742;
   margin: -71px 0px 17px 19px;
-  font-size: 3em;
+  font-size: 2rem;
   font-family: "Roboto";
 }
 
 .titulo3 {
   color: #ffffff;
   margin: 0px 0px 17px 19px;
-  font-size: 3em;
+  font-size: 2rem;
   font-family: "Roboto";
   text-align: center;
 }
@@ -122,7 +122,7 @@
 .titulo4 {
   color: #6d8742;
   margin: 0px 0px 17px 19px;
-  font-size: 3em;
+  font-size: 2rem;
   font-family: "Roboto";
   text-align: center;
 }

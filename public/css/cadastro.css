@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(131, 165, 100, 0.8);
+  background-color: rgba(131, 165, 100);
   color: #f2f2f2;
   text-decoration: none;
   font-family: var(--font-primary);
@@ -21,7 +21,8 @@ h2 {
 }
 
 .formulario {
-  margin-top: 15vh;
+  margin-top: 10vh;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

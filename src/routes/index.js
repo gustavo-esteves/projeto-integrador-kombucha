@@ -24,4 +24,11 @@ router.get("/cadastro", function (req, res, next) {
   });
 });
 
+/* GET carrinho page. */
+router.get("/carrinho", function (req, res, next) {
+  res.render("carrinho", {
+    title: "Carrinho",
+  });
+});
+
 module.exports = router;
