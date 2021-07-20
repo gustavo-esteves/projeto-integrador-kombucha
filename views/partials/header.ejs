@@ -37,7 +37,7 @@
           <i class="fas fa-shopping-cart" style="color: #ffed4c"></i></a></li>
         </ul>
       </nav>
-
+      <% } %>
       <!-- Barra de pesquisa 
 
     <form id="pesquisar" action="" method="get">
@@ -50,7 +50,7 @@
     </form> -->
 
       <!-- Contato -->
-
+      <% if (!locals.isCarrinhoPage) { %>
       <div class="contato">
         <ul>
           <li title="Facebook">
@@ -70,5 +70,5 @@
           </li>
         </ul>
       </div>
+      <% } %>
 </header>
-<% } %>
