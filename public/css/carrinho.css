@@ -9,7 +9,7 @@ section {
   margin-top: 10vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
   padding: 10px;
 }
 
@@ -89,11 +89,3 @@ span.price {
 }
 
 
-@media (max-width: 800px) {
-  .section {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}

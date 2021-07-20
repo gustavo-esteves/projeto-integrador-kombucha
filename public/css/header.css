@@ -3,7 +3,7 @@
 #cabecalho {
   position: fixed;
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   z-index: 1;

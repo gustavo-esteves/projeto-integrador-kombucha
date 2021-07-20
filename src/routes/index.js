@@ -28,6 +28,7 @@ router.get("/cadastro", function (req, res, next) {
 router.get("/carrinho", function (req, res, next) {
   res.render("carrinho", {
     title: "Carrinho",
+    isCarrinhoPage: true,
   });
 });
 

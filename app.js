@@ -38,4 +38,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+app.listen(function(){
+  console.log("Servidor online em http://localhost:3000")
+})
+
 module.exports = app;

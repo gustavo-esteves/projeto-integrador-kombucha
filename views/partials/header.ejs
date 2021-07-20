@@ -1,4 +1,7 @@
 <!-- Cabeçalho -->
+
+
+
 <link href="/css/header.css" rel="stylesheet" />
 
 <!-- Logo e label name -->
@@ -20,7 +23,7 @@
     <% } %>
 
       <!-- Menu de navegação -->
-
+      <% if (!locals.isCarrinhoPage) { %>
       <nav class="menu">
         <ul>
           <li class="home"><a href="/">início</a></li>
@@ -68,3 +71,4 @@
         </ul>
       </div>
 </header>
+<% } %>

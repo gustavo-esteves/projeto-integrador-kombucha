@@ -274,8 +274,10 @@
 }
 
 .btn:hover {
-  background-color: #d5d5d5;
-  color: #333;
+  color: #000;
+  background-color: #ffed4c;
+  font-weight: 500;
+  transition: 0.7s;
 }
 
 .garrafa {
@@ -297,8 +299,8 @@
   transition-duration: 0.3s;
 }
 
-.amarelo {
-  background: #f1e032;
+.laranja {
+  background: #e98441;
 }
 
 .azul1 {
@@ -409,3 +411,23 @@
   cursor: pointer;
 }
 
+.btn-1:hover {
+  color: #000;
+  background-color: #ffed4c;
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+.btn-2:hover {
+  color: #000;
+  background-color: #ffed4c;
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+.btn-3:hover {
+  color: #000;
+  background-color: #ffed4c;
+  font-weight: 500;
+  transition: 0.7s;
+}
