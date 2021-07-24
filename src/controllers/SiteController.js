@@ -1,8 +1,8 @@
-const ProdutoService = require('../services/ProdutoService')
+const ProductService = require('../services/product.service')
 
 class SiteController {
   static homePage (req, res) {
-    const products = ProdutoService.getAll()
+    const products = ProductService.getAll()
 
     res.render('index', {
       title: 'Kombucha',
@@ -18,21 +18,18 @@ class SiteController {
   }
 
   static cadastroPage (req, res) {
-      res.render('cadastro', {
+    res.render('cadastro', {
       title: 'Cadastro',
       isCadastroPage: true
     })
   }
 
   static carrinhoPage (req, res) {
-      res.render('carrinho', {
+    res.render('carrinho', {
       title: 'Carrinho',
       isCarrinhoPage: true
     })
   }
-
 }
-
-
 
 module.exports = SiteController

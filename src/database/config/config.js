@@ -1,10 +1,10 @@
 module.exports = {
   development: {
     username: 'myuser',
-    password: 'root',
-    database: 'ohmbucha_db',
+    password: 'mypass',
+    database: 'kombusha',
     host: 'localhost',
-    port: '3306',
+    port: '3307',
     dialect: 'mysql',
     timezone: '-03:00'
   },
