@@ -9,18 +9,17 @@
           </h2>
         </div>
         <div class="box-invisivel">
-          <h3 class="valor">R$ 0,00</h3>
+          <h3 class="valor"><%= product.price %></h3>
           <hr class="line-sabores" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <%= product.description %>
           </p>
-          <button class="btn rosa">COMPRAR</button>
+          <button class="btn <%= product.classes %>">COMPRAR</button>
         </div>
-        <img src="/img/bancha.png" alt="" class="garrafa" />
+        <img src="<%= product.image %>" alt="" class="garrafa" />
       </div>
     </div>
-
+    
     <% }) %>
 </div>
 
