@@ -46,7 +46,8 @@
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 40%;
+  height: fit-content;
 }
 
 .col-5 {
@@ -82,6 +83,7 @@
 }
 
 .wrapper {
+
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -284,7 +286,7 @@
 
 .garrafa {
   position: absolute;
-  width: 108px;
+  width: 80px;
   top: -32px;
   left: -10px;
 }
