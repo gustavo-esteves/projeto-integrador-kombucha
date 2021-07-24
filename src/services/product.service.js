@@ -1,8 +1,8 @@
-const ALL_PRODUCTS = []
+const { produtos } = require('../database/models')
 
 class ProductService {
   static getAll () {
-    return ALL_PRODUCTS
+    return produtos.findAll()
   }
 }
 

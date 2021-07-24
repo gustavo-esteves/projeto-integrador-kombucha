@@ -1,8 +1,8 @@
 const ProductService = require('../services/product.service')
 
 class SiteController {
-  static homePage (req, res) {
-    const products = ProductService.getAll()
+  static async homePage (req, res) {
+    const products = await ProductService.getAll()
 
     res.render('index', {
       title: 'Kombucha',
