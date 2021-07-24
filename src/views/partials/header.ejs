@@ -13,32 +13,41 @@
 
   <!-- Login -->
   <% if (!locals.isLoginPage) { %>
-    
+
     <div class="login">
-      <a href="/login" class="btn-login">
-        <i class="fas fa-user fa-1x"></i>
-        <span>login</span>
-      </a>
+      <% if (!locals.isLogged) { %>
+        <a href="/login" class="btn-login">
+          <i class="fas fa-user fa-1x"></i>
+          <span>login</span>
+        </a>
+
+        <% } else { %>
+          <span>Olá <%= locals.user.name %>! - </span>
+          <a href="/logout" class="btn-login">
+            <i class="fas fa-user fa-1x"></i>
+            <span>logout</span>
+          </a>
+          <% } %>
     </div>
     <% } %>
 
       <!-- Menu de navegação -->
       <% if (!locals.isCarrinhoPage) { %>
-      <nav class="menu">
-        <ul>
-         
-          <li><a href="/#sabores">produtos</a></li>
+        <nav class="menu">
+          <ul>
 
-          <% if (!locals.isCadastroPage) { %>
-          <li class="cadastro"><a href="/cadastro">cadastro</a></li>
-          <% } %>
-          
-          <li class="carrinho"><a href="/carrinho">carrinho
-          <i class="fas fa-shopping-cart" style="color: #ffed4c"></i></a></li>
-        </ul>
-      </nav>
-      <% } %>
-      <!-- Barra de pesquisa 
+            <li><a href="/#sabores">produtos</a></li>
+
+            <% if (!locals.isCadastroPage) { %>
+              <li class="cadastro"><a href="/cadastro">cadastro</a></li>
+              <% } %>
+
+                <li class="carrinho"><a href="/carrinho">carrinho
+                    <i class="fas fa-shopping-cart" style="color: #ffed4c"></i></a></li>
+          </ul>
+        </nav>
+        <% } %>
+          <!-- Barra de pesquisa
 
     <form id="pesquisar" action="" method="get">
         <span id="icone_busca">
@@ -49,26 +58,26 @@
         <button type="submit">Procurar</button>
     </form> -->
 
-      <!-- Contato -->
-      <% if (!locals.isCarrinhoPage) { %>
-      <div class="contato">
-        <ul>
-          <li title="Facebook">
-            <a href="https://www.facebook.com/Ohmbucha-114421486867260" target="_blank">
-              <i class="fab fa-facebook-square fa-2x"></i>
-            </a>
-          </li>
-          <li title="Instagram">
-            <a href="https://www.instagram.com/ohmbucha_br" target="_blank">
-              <i class="fab fa-instagram fa-2x"></i>
-            </a>
-          </li>
-          <li title="Whatsapp">
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank">
-              <i class="fab fa-whatsapp fa-2x"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <% } %>
+          <!-- Contato -->
+          <% if (!locals.isCarrinhoPage) { %>
+            <div class="contato">
+              <ul>
+                <li title="Facebook">
+                  <a href="https://www.facebook.com/Ohmbucha-114421486867260" target="_blank">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                  </a>
+                </li>
+                <li title="Instagram">
+                  <a href="https://www.instagram.com/ohmbucha_br" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </li>
+                <li title="Whatsapp">
+                  <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511951541097" target="_blank">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <% } %>
 </header>

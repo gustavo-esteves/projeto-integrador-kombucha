@@ -1,3 +1,4 @@
+const AuthService = require('../services/auth.service')
 const ProductService = require('../services/product.service')
 
 class SiteController {
@@ -29,6 +30,61 @@ class SiteController {
       title: 'Carrinho',
       isCarrinhoPage: true
     })
+  }
+
+  static async doRegister (req, res) {
+    try {
+      const newUser = {
+        name: req.body.name,
+        email: req.body.email,
+        phone: '-',
+        password: req.body.password
+      }
+
+      const user = await UserService.create(newUser)
+
+      req.startSession(user)
+
+      res.redirect('/')
+    } catch (err) {
+      console.log(err)
+
+      res.render('register', {
+        title: 'APP Cadastro',
+        error: err.message
+      })
+    }
+  }
+
+  static async doLogin (req, res) {
+    const { email, password } = req.body
+
+    try {
+      const user = await AuthService.authenticate(email, password)
+
+      if (!user) {
+        return res.render('login', {
+          title: 'APP Entrar',
+          error: 'Usuário ou senha inválidos'
+        })
+      }
+
+      req.startSession(user)
+
+      res.redirect('/#sabores')
+    } catch (err) {
+      console.log(err)
+
+      res.render('login', {
+        title: 'APP Entrar',
+        error: 'Erro inesperado'
+      })
+    }
+  }
+
+  static doLogout (req, res) {
+    req.session.destroy()
+    res.redirect('/')
   }
 }
 
