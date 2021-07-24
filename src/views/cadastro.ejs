@@ -21,18 +21,30 @@
       <h2>Dados básicos</h2>
       <form action="/cadastro" method="post">
         <p>
+          <label for="nome">Nome</label><br />
+          <input type="text" placeholder="Manolo" name="nome" id="nome" /><br />
+        </p>
+        <p>
+          <label for="nome">Sobrenome</label><br />
+          <input type="text" placeholder="Silva" name="sobrenome" id="sobrenome" /><br />
+        </p>
+        <p>
           <label for="email">Email</label><br />
           <input type="email" placeholder="Digite seu email" name="email" id="email" /><br />
+        </p>
+        <p>
+          <label for="cpf">CPF</label><br />
+          <input type="text" placeholder="Digite seu CPF" name="cpf" id="cpf" pattern="[0-9]{11}"/><br />
         </p>
         <p>
           <label for="senha">Senha</label><br />
           <input type="password" placeholder="Cadastre sua senha" name="password" id="password" /><br />
         </p>
         <p>
-          <label for="nome">Nome completo</label><br />
-          <input type="text" placeholder="Seu nome completo" name="nome" id="nome" /><br />
+          <label for="senha2">Repita sua senha</label><br />
+          <input type="password2" placeholder="Repita sua senha" name="password2" id="password2" /><br />
         </p>
-    </div>
+      </div>
     <div class="formulario2">
 
       <h2>Dados de entrega</h2>
@@ -47,13 +59,13 @@
       </p>
 
       <p>
-        <label for="bairro">Bairro</label><br />
-        <input type="text" name="bairro" id="bairro" /><br />
+        <label for="complemento">Complemento</label><br />
+        <input type="text" name="complemento" id="complemento" /><br />
       </p>
 
       <p>
-        <label for="complemento">Complemento</label><br />
-        <input type="text" name="complemento" id="complemento" /><br />
+        <label for="bairro">Bairro</label><br />
+        <input type="text" name="bairro" id="bairro" /><br />
       </p>
 
       <p>
@@ -63,7 +75,8 @@
 
       <p>
         <label for="estado">Estado</label><br />
-        <input type="text" name="estado" id="estado" /><br />
+        <input list="estado">
+        <datalist id="estado"></datalist><br />
       </p>
 
       <p>

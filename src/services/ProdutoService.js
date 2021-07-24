@@ -1,7 +1,7 @@
 const ALL_PRODUCTS = [
   {
     id: '1',
-    name: 'BANCHA',
+    name: 'ORIGINAL',
     price: 'R$12,00',
     description:
       'Demos nosso toque extra a uma receita tradicional.',
