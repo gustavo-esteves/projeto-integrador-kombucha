@@ -17,6 +17,9 @@ router.get('/logout', SiteController.doLogout)
 /* GET cadastro page. */
 router.get('/cadastro', SiteController.cadastroPage)
 
+/* POST cadastro page. */
+router.post('/cadastro', SiteController.doRegister)
+
 /* GET carrinho page. */
 router.get('/carrinho', SiteController.carrinhoPage)
 

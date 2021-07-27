@@ -36,16 +36,25 @@ class SiteController {
     try {
       const newUser = {
         name: req.body.name,
+        lastname: req.body.lastname,
         email: req.body.email,
-        phone: '-',
-        password: req.body.password
+        cpf: req.body.cpf,        
+        password: req.body.password,
+        address: req.body.adress,
+        number: req.body.number,
+        district: req.body.district,
+        city: req.body.city,
+        state: req.body.state,
+        cep: req.body.cep,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
 
       const user = await UserService.create(newUser)
 
       req.startSession(user)
 
-      res.redirect('/')
+      res.redirect('login')
     } catch (err) {
       console.log(err)
 

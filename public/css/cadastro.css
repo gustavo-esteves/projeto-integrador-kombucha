@@ -14,11 +14,10 @@ body {
 }
 
 section {
-  margin: 15vh 5vh 10vh 5vw;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   color: #fff;
 }
@@ -26,30 +25,21 @@ section {
 h2 {
   font-size: 2rem;
   padding: 30px;
+  align-items: center;
 }
 
 .formulario {
   margin-top: 10vh;
   padding: 5px 20px 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction:row;
   border-radius: 3px;
   box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.09);
   background-color: rgb(131, 165, 100, 0.7);
 }
 
-.formulario2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 5px 20px 50px;
-  border-radius: 3px;
-  box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.09);
-  background-color: rgb(131, 165, 100, 0.7);
-}
+
 
 input {
   width: 350px;
