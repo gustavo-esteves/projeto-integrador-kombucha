@@ -49,7 +49,7 @@ input {
   border-radius: 3px;
 }
 
-#submit {
+button {
   color: #11998e;
   font-weight: 700;
   margin: 10px 0;

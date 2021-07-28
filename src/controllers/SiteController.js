@@ -1,5 +1,6 @@
 const AuthService = require('../services/auth.service')
 const ProductService = require('../services/product.service')
+const UserService = require('../services/users.service')
 
 class SiteController {
   static async homePage (req, res) {
@@ -40,7 +41,7 @@ class SiteController {
         email: req.body.email,
         cpf: req.body.cpf,        
         password: req.body.password,
-        address: req.body.adress,
+        address: req.body.address,
         number: req.body.number,
         district: req.body.district,
         city: req.body.city,
@@ -54,7 +55,7 @@ class SiteController {
 
       req.startSession(user)
 
-      res.redirect('login')
+      res.redirect('/')
     } catch (err) {
       console.log(err)
 
