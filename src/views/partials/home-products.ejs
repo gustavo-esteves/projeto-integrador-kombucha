@@ -14,7 +14,7 @@
           <p>
             <%= product.description %>
           </p>
-          <button class="btn <%= product.classes %>">COMPRAR</button>
+          <a href="/carrinho/add/<%= product.id %>" class="btn <%= product.classes %>">COMPRAR</a>
         </div>
         <img src="<%= product.image %>" alt="" class="garrafa" />
       </div>

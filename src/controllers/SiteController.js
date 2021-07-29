@@ -3,7 +3,7 @@ const ProductService = require('../services/product.service')
 const UserService = require('../services/users.service')
 
 class SiteController {
-  static async homePage (req, res) {
+  static async homePage(req, res) {
     const products = await ProductService.getAll()
 
     res.render('index', {
@@ -12,34 +12,45 @@ class SiteController {
     })
   }
 
-  static loginPage (req, res) {
+  static loginPage(req, res) {
     res.render('login', {
       title: 'Login',
       isLoginPage: true
     })
   }
 
-  static cadastroPage (req, res) {
+  static cadastroPage(req, res) {
     res.render('cadastro', {
       title: 'Cadastro',
       isCadastroPage: true
     })
   }
 
-  static carrinhoPage (req, res) {
+  static async carrinhoPage(req, res) {
+    console.log(req.session.cart, "---------")
+    const itens = req.session.cart || []
+    const carrinho = []
+
+    for (const id of itens) {
+      const produto = await ProductService.getById(id)
+      carrinho.push(produto)
+    }
+    console.log(carrinho)
+
     res.render('carrinho', {
       title: 'Carrinho',
+      carrinho: carrinho, 
       isCarrinhoPage: true
     })
   }
 
-  static async doRegister (req, res) {
+  static async doRegister(req, res) {
     try {
       const newUser = {
         name: req.body.name,
         lastname: req.body.lastname,
         email: req.body.email,
-        cpf: req.body.cpf,        
+        cpf: req.body.cpf,
         password: req.body.password,
         address: req.body.address,
         number: req.body.number,
@@ -66,7 +77,7 @@ class SiteController {
     }
   }
 
-  static async doLogin (req, res) {
+  static async doLogin(req, res) {
     const { email, password } = req.body
 
     try {
@@ -92,10 +103,22 @@ class SiteController {
     }
   }
 
-  static doLogout (req, res) {
+  static doLogout(req, res) {
     req.session.destroy()
     res.redirect('/')
   }
+
+  static addToCart(req, res) {
+
+    if (typeof req.session.cart !== "object") {
+      req.session.cart = []
+    }
+    req.session.cart.push(req.params.id)
+
+    res.redirect('/#sabores')
+
+  }
+
 }
 
 module.exports = SiteController
