@@ -17,72 +17,103 @@
   <%- include('partials/header') %>
 
     <section>
-      <div class="formulario">
+      <div class="form_1">
         <h2>Dados básicos</h2>
         <form action="cadastro" method="post">
           <p>
             <label for="name">Nome</label><br />
-            <input type="text" placeholder="Manolo" name="name" id="name" /><br />
+            <input type="text" required placeholder="Manolo" name="name" id="name"/><br />
           </p>
           <p>
             <label for="lastname">Sobrenome</label><br />
-            <input type="text" placeholder="Silva" name="lastname" id="lastname" /><br />
+            <input type="text" required placeholder="Silva" name="lastname" id="lastname"/><br />
           </p>
           <p>
             <label for="email">Email</label><br />
-            <input type="email" placeholder="Digite seu email" name="email" id="email" /><br />
+            <input type="email" required placeholder="Digite seu email" name="email" id="email"/><br />
           </p>
           <p>
             <label for="cpf">CPF</label><br />
-            <input type="text" placeholder="Digite seu CPF" name="cpf" id="cpf" pattern="[0-9]{11}" /><br />
+            <input type="text" required placeholder="Digite seu CPF" name="cpf" id="cpf" pattern="[0-9]{11}"/><br />
           </p>
-          <p>
+          <p id="senha">
             <label for="senha">Senha</label><br />
-            <input type="password" placeholder="Cadastre sua senha" name="password" id="password" /><br />
+            <input type="password" required placeholder="Cadastre sua senha" name="password" id="password"/><br />
+            <input type="password" required placeholder="Repita sua senha" name="confirm_password" id="confirm_password"/><br />
+            <input id="checkbox" type="checkbox" onclick="showPass()">
+            <span style="color: #ffed4c;">Mostrar senha</span>
           </p>
-          <p>
-            <label for="senha2">Repita sua senha</label><br />
-            <input type="password" placeholder="Repita sua senha" name="password2" id="password2" /><br />
-          </p>
-         
+        </div>
 
+        <div class="form_2">
           <h2>Dados de entrega</h2>
           <p>
             <label for="address">Endereço</label><br />
-            <input type="text" name="address" id="address" /><br />
+            <input type="text" required name="address" id="address"/><br />
           </p>
 
           <p>
             <label for="number">Número</label><br />
-            <input type="text" name="number" id="number" /><br />
+            <input type="text" required name="number" id="number"/><br />
           </p>
 
           <p>
             <label for="district">Bairro</label><br />
-            <input type="text" name="district" id="district" /><br />
+            <input type="text" required name="district" id="district"/><br />
           </p>
 
           <p>
             <label for="city">Cidade</label><br />
-            <input type="text" name="city" id="city" /><br />
+            <input type="text" required name="city" id="city"/><br />
           </p>
 
           <p>
             <label for="state">Estado</label><br />
-            <input list="state" />
-            <datalist id="state"></datalist><br />
+            <input list="state" required/>
+            <datalist id="state">
+              <option value="AC"></option>
+              <option value="AL"></option>
+              <option value="AM"></option>
+              <option value="AP"></option>
+              <option value="BA"></option>
+              <option value="CE"></option>
+              <option value="DF"></option>
+              <option value="ES"></option>
+              <option value="GO"></option>
+              <option value="MA"></option>
+              <option value="MG"></option>
+              <option value="MS"></option>
+              <option value="MT"></option>
+              <option value="PA"></option>
+              <option value="PB"></option>
+              <option value="PE"></option>
+              <option value="PI"></option>
+              <option value="PR"></option>
+              <option value="RJ"></option>
+              <option value="RO"></option>
+              <option value="RN"></option>
+              <option value="RR"></option>
+              <option value="RS"></option>
+              <option value="SC"></option>
+              <option value="SE"></option>
+              <option value="SP"></option>
+              <option value="TO"></option>
+            </datalist>
+
+            <br />
           </p>
 
           <p>
             <label for="cep">CEP</label><br />
-            <input type="text" name="cep" id="cep" /><br />
+            <input type="text" required name="cep" id="cep"/><br />
           </p>
 
           <br />
 
-          <button type="submit">Cadastrar</button>
-        </form>
-      </div>
+          <button id="btn" type="submit">Cadastrar</button>
+        </div>
+      </form>
+      
 
       <br />
 
@@ -90,6 +121,7 @@
     </section>
 
     <%- include('partials/footer') %>
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>

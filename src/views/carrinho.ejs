@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/img/favicon-16x16.png"
-    />
-    <link rel="stylesheet" href="/css/carrinho.css" />
-    <title>Carrinho - OHMBUCHA</title>
-  </head>
 
-  <body>
-    <%- include('partials/header') %>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+  <link rel="stylesheet" href="/css/carrinho.css" />
+  <title>Carrinho - OHMBUCHA</title>
+</head>
+
+<body>
+  <%- include('partials/header') %>
 
     <section>
-      
+
       <div class="col-25">
         <div class="container">
           <h2>
@@ -42,22 +29,28 @@
           </h2>
           <br />
           <% carrinho.forEach((product)=> { %>
-          <p><a href="#"><%= product.name %></a> <span class="price"><%= product.price %></span></p>
-          <br />
+            <p><img src="<%= product.image %>" style="height: 50px;"><br>
+              <%= product.name %><span class="price">
+                  <%= product.price %>
+                </span>
+            </p>
+            <br />
 
-          <% }) %>
-          <h2>
-            <b>Total</b>
-            <% carrinho.forEach((product)=> { %>
-            <span class="price" style="color: #fff"><b><%= product.price %> </b></span>
             <% }) %>
-          
-        </h2>
-        
-          
+              <h2>
+                <b>Total</b>
+                <% carrinho.forEach((product)=> { %>
+                  <span class="price" style="color: #fff"><b>
+                      <%= product.price %>
+                    </b></span>
+                  <% }) %>
+
+              </h2>
+
+
         </div>
       </div>
-      
+
 
       <div class="col-75">
         <div class="container">
@@ -72,51 +65,20 @@
                 <i class="fab fa-cc-amex"></i>
               </div>
               <label for="cname">Nome no cartão</label>
-              <input
-                type="text"
-                id="cname"
-                name="cardname"
-                placeholder="Ex: Manolo da Silva"
-              />
+              <input type="text" id="cname" name="cardname" placeholder="Ex: Manolo da Silva" required/>
               <label for="ccnum">Número do cartão</label>
-              <input
-                type="text"
-                maxlength="12"
-                id="ccnum"
-                name="cardnumber"
-                placeholder="Ex: 9999 9999 9999 9999"
-              />
+              <input type="text" maxlength="12" id="ccnum" name="ccnum" placeholder="Ex: 9999 9999 9999 9999" required/>
 
               <div class="row">
                 <div class="col-50">
                   <label for="expmonth">Mês</label>
-                  <input
-                    type="number"
-                    min="01"
-                    max="12"
-                    maxlength="2"
-                    id="expmonth"
-                    name="expmonth"
-                    placeholder="Ex: 01"
-                  />
+                  <input type="number" min="01" max="12" maxlength="2" id="expmonth" name="expmonth"
+                    placeholder="Ex: 01" required/>
                   <label for="expyear">Ano</label>
-                  <input
-                    type="number"
-                    min="2021"
-                    max="2028"
-                    maxlength="4"
-                    id="expyear"
-                    name="expyear"
-                    placeholder="Ex: 2021"
-                  />
+                  <input type="number" min="2021" max="2028" maxlength="4" id="expyear" name="expyear"
+                    placeholder="Ex: 2021" required/>
                   <label for="cvv">CVV</label>
-                  <input
-                    type="text"
-                    maxlength="3"
-                    id="cvv"
-                    name="cvv"
-                    placeholder="999"
-                  />
+                  <input type="text" maxlength="3" id="cvv" name="cvv" placeholder="999" required/>
                 </div>
               </div>
             </div>
@@ -127,5 +89,6 @@
       </div>
     </section>
     <%- include('partials/footer') %>
-  </body>
+</body>
+
 </html>

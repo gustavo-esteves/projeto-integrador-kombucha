@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(131, 165, 100, 0.7);
+  color: #fff;
+  margin: 20vh 20vw;
+}
+
+div {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffed4c;
+  font-size: 1rem;
+  font-weight: 700;
+}

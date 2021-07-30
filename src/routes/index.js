@@ -23,6 +23,7 @@ router.post('/cadastro', SiteController.doRegister)
 /* GET carrinho page. */
 router.get('/carrinho', SiteController.carrinhoPage)
 
+/* GET carrinho add. */
 router.get('/carrinho/add/:id', SiteController.addToCart)
 
 module.exports = router

@@ -85,7 +85,7 @@ class SiteController {
 
       if (!user) {
         return res.render('login', {
-          title: 'APP Entrar',
+          title: 'Login',
           error: 'Usuário ou senha inválidos'
         })
       }
@@ -97,7 +97,7 @@ class SiteController {
       console.log(err)
 
       res.render('login', {
-        title: 'APP Entrar',
+        title: 'Login',
         error: 'Erro inesperado'
       })
     }
