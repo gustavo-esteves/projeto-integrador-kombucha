@@ -51,7 +51,7 @@
     <div class="right box">
       <h2>Fale Conosco</h2>
       <div class="content">
-        <form action="">
+        <form action="sendEmail" id="sendEmail" onsubmit="sendEmail()" method="POST">
           <div class="email">
             <div class="text">E-mail *</div>
             <input type="email" required />
@@ -61,7 +61,7 @@
             <textarea cols="25" rows="2" required></textarea>
           </div>
           <div class="btn">
-            <button type="submit">Enviar</button>
+            <button type="submit" >Enviar</button>
           </div>
         </form>
       </div>
@@ -75,6 +75,7 @@
       </span>
     </center>
   </div>
+  <script src="/js/scripts.js"></script>
 </footer>
 
 <% } %>

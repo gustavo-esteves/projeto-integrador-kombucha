@@ -91,14 +91,3 @@ a {
   color: #ffed4c;
 }
 
-#voltar {
-  align-self: flex-end;
-  color: #ffed4c;
-  font-size: 1.2rem;
-}
-
-footer {
-  position: relative;
-  margin-top: 5vh;
-}
-

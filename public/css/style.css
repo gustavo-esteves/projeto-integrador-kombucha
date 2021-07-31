@@ -260,7 +260,7 @@
 
 .line-sabores {
   width: 87%;
-  border-bottom: 4px solid #f78e89;
+  border-bottom: 4px solid #ffed4c;
   margin-top: 10px;
 }
 
@@ -281,9 +281,11 @@
 
 .garrafa {
   position: absolute;
-  width: 80px;
+ 
   top: -32px;
   left: -10px;
+  width: 20%;
+  height: auto;
 }
 
 .box-invisivel {
@@ -319,7 +321,7 @@
 }
 
 /*Planos de Assinatura*/
-/*Conteúdo da tabela*/
+/*Conteúdo da tabela
 
 .planos {
   background: linear-gradient(to bottom, #faffd1, rgb(131, 165, 100, 0.8));
@@ -430,3 +432,4 @@
   font-weight: 500;
   transition: 0.7s;
 }
+*/

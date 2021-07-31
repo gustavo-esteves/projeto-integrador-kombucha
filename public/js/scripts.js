@@ -15,3 +15,18 @@ function showPass() {
         y.type = "password";
     }
 }
+
+//---- Alerta sendEmail footer ----//
+
+function sendEmail() {
+    let send = document.forms["sendEmail"].value;
+    if (send == " ") {
+        alert('Formulário incompleto')
+        
+    }
+    else {
+
+        alert('Sua mensagem foi recebida, logo retornaremos seu contato.')
+    }
+}
+

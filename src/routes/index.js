@@ -26,4 +26,7 @@ router.get('/carrinho', SiteController.carrinhoPage)
 /* GET carrinho add. */
 router.get('/carrinho/add/:id', SiteController.addToCart)
 
+/* Post sendEmail footer. */
+router.post('/sendEmail', SiteController.homePage)
+
 module.exports = router
