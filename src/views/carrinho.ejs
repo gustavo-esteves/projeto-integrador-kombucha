@@ -22,29 +22,28 @@
             Carrinho
             <span class="price">
               <i class="fa fa-shopping-cart"></i>
-              <b>#</b>
+              <b><%= carrinho.quantidadeTotal %></b>
             </span>
             <br />
           </h2>
           <br />
-          <% carrinho.forEach((product)=> { %>
+          <% for (let product of carrinho.items) { %>
             <p>
               <img src="<%= product.image %>" style="height: 50px" /><br />
-              <%= product.name %><span class="price">
-
-                  <%= product.price %>
-                </span>
+              <%= product.name %>
+          
+              <span class="price">
+                <%= product.quantidade %> x R$ <%= product.price %>,00
+              </span>
             </p>
             <br />
 
-            <% }) %>
+          <% } %>
               <h2>
                 <b>Total</b>
-                <% carrinho.forEach((product)=> { %>
-                  <span class="price" style="color: #fff"><b>
-                      <%= product.price %>
-                    </b></span>
-                  <% }) %>
+                <span class="price" style="color: #fff">
+                  <b> R$ <%= carrinho.total %>,00 </b>
+                </span>
               </h2>
         </div>
       </div>

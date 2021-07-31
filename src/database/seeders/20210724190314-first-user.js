@@ -1,6 +1,6 @@
 'use strict'
 
-/*const { hash } = require('../../helpers/cipher')
+const { hash } = require('../../helpers/cipher')
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -32,4 +32,3 @@ module.exports = {
     await queryInterface.bulkDelete('users', null, {})
   }
 }
-*/

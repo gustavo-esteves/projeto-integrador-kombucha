@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   produtos.init({
     name: DataTypes.STRING,
-    price: DataTypes.STRING,
+    price: DataTypes.FLOAT,
     description: DataTypes.STRING,
     image: DataTypes.STRING,
     classes: DataTypes.STRING

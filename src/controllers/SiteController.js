@@ -1,6 +1,7 @@
 const AuthService = require('../services/auth.service')
 const ProductService = require('../services/product.service')
 const UserService = require('../services/users.service')
+const { calculateTotal, calculateQuantidadeTotal } = require('../helpers/cart')
 
 class SiteController {
   static async homePage(req, res) {
@@ -27,21 +28,40 @@ class SiteController {
   }
 
   static async carrinhoPage(req, res) {
-    console.log(req.session.cart, "---------")
-    const itens = req.session.cart || []
-    const carrinho = []
-
-    for (const id of itens) {
-      const produto = await ProductService.getById(id)
-      carrinho.push(produto)
-    }
-    console.log(carrinho)
+    const cart = req.session.cart || { items: {} }
 
     res.render('carrinho', {
       title: 'Carrinho',
-      carrinho: carrinho, 
+      carrinho: {
+        items: Object.values(cart.items),
+        total: calculateTotal(cart),
+        quantidadeTotal: calculateQuantidadeTotal(cart)
+      }, 
       isCarrinhoPage: true
     })
+  }
+
+  
+  static async addToCart(req, res) {
+    const cart = req.session.cart || { items: {} }
+
+    const product = await ProductService.getById(req.params.id)
+
+    if (cart.items[product.id]) {
+      cart.items[product.id].quantidade += 1
+    } else {
+      cart.items[product.id] = {
+        id: product.id,
+        quantidade: 1,
+        name: product.name,
+        price: product.price,
+        image: product.image
+      }
+    }
+    
+    req.session.cart = cart
+
+    res.redirect('/#sabores')
   }
 
   static async doRegister(req, res) {
@@ -106,17 +126,6 @@ class SiteController {
   static doLogout(req, res) {
     req.session.destroy()
     res.redirect('/')
-  }
-
-  static addToCart(req, res) {
-
-    if (typeof req.session.cart !== "object") {
-      req.session.cart = []
-    }
-    req.session.cart.push(req.params.id)
-
-    res.redirect('/#sabores')
-
   }
 
 }
